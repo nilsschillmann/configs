@@ -3,6 +3,24 @@
   "blocks": [
     {
       "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "path",
+          "style": "plain",
+          "foreground": "darkGray",
+          "properties": {
+            "prefix": "",
+            "postfix": "",
+            "style": "agnoster_full",
+            "home_icon": "\uFB9F"
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "prompt",
       "alignment": "right",
       "segments": [
         {
@@ -18,19 +36,6 @@
             "default_user_name": "Nils",
             "postfix": "",
             "prefix": ""
-          }
-        },
-        {
-          "type": "path",
-          "style": "diamond",
-          "trailing_diamond": "\uE0B4",
-          "leading_diamond": "\uE0B6",
-          "foreground": "#3EC669",
-          "background": "#29315A",
-          "properties": {
-            "prefix": "\uE5FF ",
-            "postfix": "",
-            "style": "agnoster_full"
           }
         },
         {
@@ -53,8 +58,8 @@
           "style": "diamond",
           "trailing_diamond": "\uE0B4",
           "leading_diamond": " \uE0B6",
-          "foreground": "#E4F34A",
-          "background": "#29315A",
+          "background": "#E4F34A",
+          "foreground": "transparent",
           "properties": {
             "prefix": "\uE235 ",
             "postfix": "",
@@ -146,6 +151,14 @@
             "postfix": "",
             "display_charging": true
           }
+        },
+        {
+          "type": "time",
+          "style": "plain",
+          "foreground": "#007ACC",
+          "properties": {
+            "time_format": "15:04:05"
+          }
         }
       ]
     },
@@ -170,11 +183,7 @@
         },
         {
           "type": "text",
-          "style": "diamond",
-          "trailing_diamond": "\uE0B4",
-          "leading_diamond": "\uE0B6",
-          "foreground": "#7FD5EA",
-          "background": "#29315A",
+          "style": "powerline",
           "properties": {
               "prefix": "",
               "text": "\u276F",
